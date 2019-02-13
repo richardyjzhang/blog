@@ -1,2 +1,2 @@
-# blog
-blog store repository
+# 个人博客存储
+个人纪录的学习记录、瞎写的啥的都往这里放。  

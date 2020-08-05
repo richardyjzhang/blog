@@ -20,11 +20,11 @@ cmake-gui.exe
 ![选择生成结果](./screenshot2.png)  
 ![指定编译器地址](./screenshot3.png)  
 首次Configure后，我们需要指定编译选项。在原有选项的基础上，额外再选择`WITH_OPENGL`和`WITH_QT`，再次点击Configure。  
-![编译选项](./screenshot4.png)
-又跑了一阵，多了一些Qt相关的选项，默认的没啥问题，直接再点击Configure进行配置。
-![最后配置](./screenshot5.png)
-这次配置完之后，已经没有红色的问题了，可以点击Generate，生成我们需要的MakeFiles。
-![生成MakeFiles](./screenshot6.png)
+![编译选项](./screenshot4.png)  
+又跑了一阵，多了一些Qt相关的选项，默认的没啥问题，直接再点击Configure进行配置。  
+![最后配置](./screenshot5.png)  
+这次配置完之后，已经没有红色的问题了，可以点击Generate，生成我们需要的MakeFiles。  
+![生成MakeFiles](./screenshot6.png)  
 生成结束后，CMake就可以关闭了。我们进入到生成的文件夹中，在命令行中打开，并直接运行`mingw32-make.exe`进行编译（这里，我已经加好了环境变量，如果没有加过，可以使用Qt中的全路径）。  
 编译比较慢，可以趁机撸一发。而且进行到40%左右时，我这里提示了一个编译错误：  
 ```

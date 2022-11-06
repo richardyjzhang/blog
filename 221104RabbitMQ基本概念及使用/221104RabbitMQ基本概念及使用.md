@@ -58,6 +58,8 @@ RabbitMQ 的 Q，就是队列。了解过数据结构的都知道，这是一种
 `config.py`用于封装公用配置，包括连接信息和 Exchange 名字等，显得很专业
 
 ```python
+# 卧槽居然提交了密码，赶紧远程改一下
+# 不过+1S真是很好的密码后缀
 RABBIT_HOST = 'cn.zhangrichard.com'
 RABBIT_USER = 'admin'
 RABBIT_PASSWORD = 'rabbit+1S'

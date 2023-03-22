@@ -138,6 +138,7 @@ GRANT REPLICATION CLIENT, REPLICATION SLAVE, FILE, SUPER, RELOAD, PROCESS, SHOW 
 
 CREATE USER maxscale@'%' identified BY "xxxx";
 GRANT select ON mysql.* TO maxscale@'%';
+GRANT SHOW DATABASES ON *.* TO 'maxscale'@'%';
 ```
 
 准备`mysql/maxscale/maxscale.cnf`文件，准备挂载至 MaxScale 容器

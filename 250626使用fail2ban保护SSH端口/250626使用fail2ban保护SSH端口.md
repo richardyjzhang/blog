@@ -68,7 +68,7 @@ maxretry = 3
 ```shell
 sudo systemctl start fail2ban
 sudo systemctl enable fail2ban
-sudo fail2ban-status status sshd
+sudo fail2ban-client status sshd
 ```
 
 至此，已经可以实现对 SSH 端口比较好的保护。（然而，防呆不防傻，你要非设置 123456 这种密码，啥技术也救不了，所以关键还是设置比较强的口令。）fail2ban 的功能还有很多，感兴趣可以自己了解。
